@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@passvault/shared-models": ["libs/shared-models/src/index.ts"],
+      "@passvault/shared-services": ["libs/shared-services/src/index.ts"],
+      "@passvault/shared-types": ["libs/shared-types/src/index.ts"],
+      "@web/components/*": ["apps/web/src/components/*"],
+      "@web/services/*": ["apps/web/src/services/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

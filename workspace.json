@@ -1,5 +1,12 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "mobile": "apps/mobile",
+    "server": "apps/server",
+    "shared-models": "libs/shared-models",
+    "shared-services": "libs/shared-services",
+    "shared-types": "libs/shared-types",
+    "web": "apps/web"
+  }
 }

@@ -1,0 +1,35 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "ES2020",
+    "outDir": "lib",
+    "paths": {
+      "@functions/*": ["apps/server/src/functions/*"],
+      "@resources/*": ["apps/server/src/resources/*"],
+      "@libs/*": ["apps/server/src/libs/*"],
+      "@db/*": ["apps/server/src/db/*"],
+      "@passvault/shared-types": ["libs/shared-types/src/index.ts"]
+    }
+  },
+  "exclude": [
+    "jest.config.ts",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    "_warmup/**/*",
+    ".vscode/**/*"
+  ],
+  "include": ["**/*.ts"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
