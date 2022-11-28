@@ -2,7 +2,7 @@ import {
   ApiResponse,
   ValidatedEventAPIGatewayProxyEvent,
 } from '@libs/api-gateway';
-import { middyfy } from '@libs/lambda';
+// import { middyfy } from '@libs/lambda';
 
 import schema from './schema';
 
@@ -15,4 +15,4 @@ const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
   });
 };
 
-export const main = middyfy(hello);
+// export const main = middyfy(hello);
